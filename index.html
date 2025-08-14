@@ -1,60 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curiosidades sobre o Espaço</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0d1b2a;
-            color: #e0e1dd;
-            margin: 0;
-            padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curiosidades do Universo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at top, #0d1b2a, #050a15);
+        color: #e0e1dd;
+    }
+
+    header {
+        text-align: center;
+        padding: 50px 20px;
+        background: rgba(27, 38, 59, 0.8);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        color: #f4d35e;
+        margin: 0 0 10px 0;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        color: #e0e1dd;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .curiosidade {
+        background: rgba(27, 38, 59, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .curiosidade:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+    }
+
+    .curiosidade h2 {
+        color: #f4d35e;
+        margin-top: 0;
+    }
+
+    .curiosidade p {
+        line-height: 1.6;
+    }
+
+    .curiosidade img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: rgba(27, 38, 59, 0.8);
+        font-size: 0.95rem;
+        color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2rem;
         }
-        header {
-            background-color: #1b263b;
-            padding: 20px;
-            text-align: center;
+        header p {
+            font-size: 1rem;
         }
-        h1 {
-            margin: 0;
-            color: #f4d35e;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .curiosidade {
-            background-color: #1b263b;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Curiosidades sobre o Espaço</h1>
-        <p>Fatos incríveis sobre o universo que vão te surpreender!</p>
-    </header>
-    <main>
-        <div class="curiosidade">
-            <h2>1. A Lua já foi parte da Terra</h2>
-            <p>Cientistas acreditam que a Lua se formou após um enorme impacto com um planeta do tamanho de Marte, há bilhões de anos.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="Foto da Lua">
-        </div>
-        <div class="curiosidade">
-            <h2>2. Existe chuva de diamantes em Netuno</h2>
-            <p>A pressão extrema no interior de Netuno e Urano pode transformar carbono em diamantes que caem como chuva.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg" alt="Imagem de Netuno">
-        </div>
-    </main>
+<header>
+    <h1>Curiosidades do Universo</h1>
+    <p>Explore fatos incríveis que vão te surpreender!</p>
+</header>
+<main>
+    <div class="curiosidade">
+        <h2>1. A Lua já foi parte da Terra</h2>
+        <p>Cientistas acreditam que a Lua se formou após um enorme impacto com um planeta do tamanho de Marte, há bilhões de anos.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="Foto da Lua">
+    </div>
+    <div class="curiosidade">
+        <h2>2. Chuva de diamantes em Netuno</h2>
+        <p>A pressão extrema no interior de Netuno e Urano pode transformar carbono em diamantes que caem como chuva.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg" alt="Imagem de Netuno">
+    </div>
+    <div class="curiosidade">
+        <h2>3. O som não se propaga no espaço</h2>
+        <p>No vácuo, não há moléculas suficientes para transmitir vibrações sonoras, então o espaço é completamente silencioso.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Starfield_in_Carina.jpg" alt="Estrelas no espaço">
+    </div>
+    <div class="curiosidade">
+        <h2>4. Existem mais estrelas que grãos de areia</h2>
+        <p>O universo possui um número de estrelas estimado maior que todos os grãos de areia da Terra.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Milky_Way_Arch.jpg" alt="Via Láctea">
+    </div>
+</main>
+<footer>
+    Feito com ❤️ por Otávio Beltrame — 2025
+</footer>
 </body>
 </html>
 
