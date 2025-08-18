@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Espacial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1f2833;
+            padding: 20px;
+            font-size: 2em;
+            color: #66fcf1;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #1f2833;
+            padding: 10px;
+            color: #c5c6c7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>🌌 Meu Site Espacial</header>
+
+    <div class="galeria">
+        <div><img src="imagens/lua.jpg" alt="Lua"><p>🌕 A Lua</p></div>
+        <div><img src="imagens/netuno.jpg" alt="Netuno"><p>🔵 Netuno</p></div>
+        <div><img src="imagens/jupiter.jpg" alt="Júpiter"><p>🟤 Júpiter</p></div>
+        <div><img src="imagens/andromeda.jpg" alt="Andrômeda"><p>🌌 Galáxia Andrômeda</p></div>
+    </div>
+
+    <footer>Feito por mim 🚀</footer>
+</body>
+</html>
